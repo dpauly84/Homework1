@@ -12,7 +12,7 @@ using namespace std;    // Allows all Standard Library items to be used
 //    declare variables before use or all at top?
 //    comment functions in .hpp .cpp or both?
 //    add functions: parts_heavier parts_ligher parts_equal
-//    implement float function in utils.cpp
+//    implement float function in utils.cpp h
 
 int main() {
 
