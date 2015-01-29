@@ -1,0 +1,21 @@
+antenna          4553-02 1.9800 A123 B021  12
+ratchet          2347-01 0.8725 A007 B021  49
+seatbelt         1987-01 0.4310 A333 B001  61
+pin              5637-03 0.0351 A007 B010 146
+wing assembly    2372-02 6150.0 A333 B021   4
+reflector        2147-02 87.231 A123 A007  53
+sprocket         1327-01 0.2100 B021 A005  98
+bolt assembly    1439-01 0.4480 B001 A333  67
+receiver         1177-02 2.4800 A007 B011  21
+transmitter      2140-03 1.9640 B001 A005   0
+socket kit       3172-01 0.9821 A005 A333  85
+aluminum casters 3005-03 15.670 B021 A005  56
+regulator        2107-01 38.740 B001 A007 207
+brace assembly   4012-03 295.21 A333 A007  74
+motor            0111-01 486.40 B011 A007  12
+heat converter   0537-01 173.66 B021 A005   0
+battery          0333-02 640.90 B011 A007  34
+wiring harness   0435-01 239.60 A123 A007  48
+spark deflector  0234-02 0.6700 B001 B010 330
+frame casting    2325-03 14.230 B001 A123  93
+ball bearings    2312-03 3.7800 B001 B021 830
