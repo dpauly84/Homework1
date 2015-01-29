@@ -17,7 +17,7 @@ const int NAME_LENGTH = 17; // Max length of part name (pname) in part file
 const int ARRAY_SIZE = 100; // Max number of parts held in Part array
 
 const char *IN_FILENAME = // name of part input file to be read from
-        "part_data.txt";
+        "/home/shockerpc/Documents/Git/Assign1/part_data.txt";
 const char *OUT_FILENAME = // name of part output file to be wrote to
         "part_matches.txt";
 const std::string PROGRAM_INFO = // Program Info displayed when ran
