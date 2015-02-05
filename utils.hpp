@@ -7,16 +7,12 @@
 #ifndef _UTIL_HPP_
 #define _UTIL_HPP_
 
-// TODO
+// All functions prompt user for input
+// Input is read as string and converted to return type
+// If conversion is not successful the process repeats
 double get_double(std::string prompt);
-
-// TODO
 int get_int(std::string prompt);
-
-// TODO
 long get_long(std::string prompt);
-
-// TODO
 float get_float(std::string prompt);
 
 #endif
