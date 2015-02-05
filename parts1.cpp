@@ -55,11 +55,9 @@ int main() {
             cout << "You must enter comparison type 1, 2, or 3!" << endl;
     } while (userSelection < 1 || userSelection > 3);
 
-    int recordsWrote = send_part_data_to_file // number of records wrote to file
-            (outFile, partList, numRecords, userSelection, weight);
+    send_part_data_to_file(outFile, partList, numRecords, userSelection, weight);
 
-    cout << "\nA list of " << recordsWrote
-         << " parts matching your selection has been saved in the file "
+    cout << "\nA list of parts matching your selection has been saved in the file "
          << OUT_FILENAME << "." << endl;
 
     // Close files
@@ -156,7 +154,7 @@ void print_part(std::ostream &os, Part &part) {
     // Send part out output stream
     os << part.pname << " "
             << part.pnumber << ", "
-            << part.weight << ", "
+            << part.weight << " N, "
             << part.inStock << " "
             << "in stock" << endl;
 }
