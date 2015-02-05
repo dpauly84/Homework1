@@ -13,9 +13,6 @@
 
 using namespace std; // Allows all Standard Library items to be used
 
-//Questions: TODO
-//    add functions: parts_heavier parts_ligher parts_equal
-
 int main() {
 
     Part partList[ARRAY_SIZE]; // Part array to hold parts read from file
@@ -37,7 +34,6 @@ int main() {
         cout << "No parts loaded from file, GoodyBye." << endl;
         exit(EXIT_FAILURE);
     }
-
 
     // Begin running program if data loaded from file successfully
     cout << PROGRAM_INFO << endl;
