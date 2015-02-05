@@ -37,32 +37,26 @@ const std::string INSTRUCTIONS =
                 "\t2 - Find parts with weights EQUAL TO your entered weight\n"
                 "\t3 - Find parts with weights GREATER THAN your entered weight\n";
 
-// Reads a certain amount of characters (length) from the stringstream
-// returns string of the characters read
-std::string read_from_string_stream(std::stringstream &from_str, int length);
-
-// remove spaces from end of string
-void rtrim(std::string &s);
+// Read part file and stores Part structure data into a Part array
+int get_part_data_from_file(std::ifstream &inFile, Part partArray[]);
 
 // Sends string parameter line to a Stringstream
 // Extracts  and stores Part structure data from Stringstream
 // Returns Part structure
 Part read_part_record(std::string line);
 
-// Prints data items of part structure to output stream
-void print_part(std::ostream &os, Part &part);
+// Reads a certain amount of characters (length) from the stringstream
+// returns string of the characters read
+std::string read_from_string_stream(std::stringstream &from_str, int length);
 
-// Read part file and stores Part structure data into a Part array
-int get_part_data_from_file(std::ifstream &inFile, Part partArray[]);
+// remove whitespaces from end of string
+void rtrim(std::string &s);
 
 // Read part file and stores Part structure data into a Part array
 int send_part_data_to_file
         (std::ofstream &outFile, Part partArray[], double weight, int selection, int records);
 
-// Ensures ifstream has opened, exits program otherwise
-void test_file_open(std::ifstream &fs);
-
-// Ensures ofstream has opened, exits program otherwise
-void test_file_open(std::ofstream &fs);
+// Prints data items of part structure to output stream
+void print_part(std::ostream &os, Part &part);
 
 #endif
