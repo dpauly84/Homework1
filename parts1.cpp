@@ -14,9 +14,6 @@
 using namespace std; // Allows all Standard Library items to be used
 
 //Questions: TODO
-//    const char and const string in .hpp or .cpp?
-//    declare variables before use or all at top?
-//    comment functions in .hpp .cpp or both?
 //    add functions: parts_heavier parts_ligher parts_equal
 
 int main() {
