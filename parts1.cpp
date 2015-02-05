@@ -41,7 +41,13 @@ int main() {
 
     // Begin running program if data loaded from file successfully
     cout << PROGRAM_INFO << endl;
-    weight = get_double("Enter the weight to use for comparing with the parts’ weights:");
+    do {
+        weight = get_double("Enter the weight to use for comparing with the parts’ weights:");
+        if (weight <= 0) {
+            cout << "Weight must be positive!" << endl;
+        }
+    } while (weight <= 0);
+
     cout << INSTRUCTIONS << endl;
     do {
         userSelection = get_int("Enter the comparison type to use: ");
@@ -50,9 +56,9 @@ int main() {
     } while (userSelection < 1 || userSelection > 3);
 
     int recordsWrote = send_part_data_to_file // number of records wrote to file
-            (outFile, partList, weight, userSelection, numRecords);
+            (outFile, partList, numRecords, userSelection, weight);
 
-    cout << "A list of " << recordsWrote
+    cout << "\nA list of " << recordsWrote
          << " parts matching your selection has been saved in the file "
          << OUT_FILENAME << "." << endl;
 
@@ -111,13 +117,10 @@ void rtrim(string &s) {
     s.erase(s.find_last_not_of(" \n\r\t") + 1);
 }
 
-
-
-
-
+// Sends part data to file based on user selection and weight
 int send_part_data_to_file
-        (ofstream &outFile, Part partArray[], double weight, int selection, int records) {
-    int numRecords = 0;
+        (std::ofstream &outFile, Part partArray[], int records, int selection, double weight) {
+    int numRecords = 0; // number of records wrote to file
     if (1 == selection) {
         for (int i = 0; i < records; ++i) {
             if (partArray[i].weight < weight) {
@@ -157,3 +160,5 @@ void print_part(std::ostream &os, Part &part) {
             << part.inStock << " "
             << "in stock" << endl;
 }
+
+//    add functions: parts_heavier parts_ligher parts_equal

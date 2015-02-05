@@ -24,7 +24,7 @@ const int NAME_LENGTH = 17; // Max length of part name (pname) in part file
 const int ARRAY_SIZE = 100; // Max number of parts held in Part array
 
 const char *IN_FILENAME = // name of part input file to be read from
-        "/home/shockerpc/Documents/Git/Assign1/part_data.txt";
+        "part_data.txt";
 const char *OUT_FILENAME = // name of part output file to be wrote to
         "part_matches.txt";
 const std::string PROGRAM_INFO = // Program Info displayed when ran
@@ -52,9 +52,9 @@ std::string read_from_string_stream(std::stringstream &from_str, int length);
 // remove whitespaces from end of string
 void rtrim(std::string &s);
 
-// Read part file and stores Part structure data into a Part array
+// Sends part data to file based on user selection and weight
 int send_part_data_to_file
-        (std::ofstream &outFile, Part partArray[], double weight, int selection, int records);
+        (std::ofstream &outFile, Part partArray[], int records, int selection, double weight);
 
 // Prints data items of part structure to output stream
 void print_part(std::ostream &os, Part &part);
