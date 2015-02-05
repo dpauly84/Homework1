@@ -1,5 +1,5 @@
 // File Name: parts1.hpp
-// Author: your Derek Pauly
+// Author: Derek Pauly
 // Student ID: s829f376
 // Assignment Number: 1
 // Last Changed: February 5, 2015
