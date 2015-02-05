@@ -1,3 +1,9 @@
+// File Name: parts1.cpp
+// Author: your Derek Pauly
+// Student ID: s829f376
+// Assignment Number: 1
+// Last Changed: February 5, 2015
+
 #include <iostream>     // Provides cout & cin
 #include <fstream>      // Provides ofstream & istream
 #include <sstream>      // Provides stringstream
@@ -48,9 +54,9 @@ int main() {
     int recordsWrote = send_part_data_to_file // number of records wrote to file
             (outFile, partList, weight, userSelection, numRecords);
 
-    cout << "A list of " << recordsWrote <<
-            " parts matching your selection has been saved in the file " <<
-            OUT_FILENAME << "." << endl;
+    cout << "A list of " << recordsWrote
+         << " parts matching your selection has been saved in the file "
+         << OUT_FILENAME << "." << endl;
 
 
 // Close files

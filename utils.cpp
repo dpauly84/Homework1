@@ -1,3 +1,10 @@
+// File Name: utils.cpp
+// Author: your Derek Pauly
+// Student ID: s829f376
+// Assignment Number: 1
+// Last Changed: February 5, 2015
+
+
 #include <iostream>
 #include <cstdlib>
 #include <cstring>
