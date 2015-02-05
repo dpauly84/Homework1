@@ -4,7 +4,6 @@
 // Assignment Number: 1
 // Last Changed: February 5, 2015
 
-
 #include <iostream>
 #include <cstdlib>
 #include <cstring>
@@ -56,7 +55,6 @@ double get_double(std::string prompt) {
     } while (!isValidNumber);
     return num;
 }
-
 
 // outputs string prompt
 // reads input as string and converts it to type long

@@ -4,7 +4,6 @@
 // Assignment Number: 1
 // Last Changed: February 5, 2015
 
-
 #ifndef _PART1_HPP_
 #define _PART1_HPP_
 

@@ -154,5 +154,3 @@ void print_part(std::ostream &os, Part &part) {
             << part.inStock << " "
             << "in stock" << endl;
 }
-
-//    add functions: parts_heavier parts_ligher parts_equal
